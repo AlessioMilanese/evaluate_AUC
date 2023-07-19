@@ -14,6 +14,8 @@ A solution that allows us to compare classifiers independently of a fixed thresh
 
 Here we want to access weather the AUC ROC is dependent on the numer of positive and negative cases, in the context of a binary classification problem. 
 
-To demonstrate this, I simulated the classification results for cases and controls, varying the number of cases and controls. I tested scenarios ranging from 10 cases out of 1000 samples to 990 cases out of 1000 samples. The AUC ROC values, representing the classifier's performance, are displayed below:
+To demonstrate this, I simulated the classification results for cases (normal distribution with mean 0.7 and sd 0.1) and controls (normal distribution with mean 0.4 and sd 0.1), varying the number of cases and controls. I tested scenarios ranging from 10 cases out of 1000 samples to 990 cases out of 1000 samples. The AUC ROC values, representing the classifier's performance, are displayed below:
 
 ![alt text](https://raw.githubusercontent.com/AlessioMilanese/evaluate_AUC/main/plots/figure_auc_1.png)
+
+Based on this simulation, it appears that the AUC remains stable and independent of the number of cases and controls. This suggests that the classifier's performance, as measured by the AUC, is consistent regardless of the proportion of cases and controls in the dataset.
