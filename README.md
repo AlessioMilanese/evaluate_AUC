@@ -22,3 +22,4 @@ Based on this simulation, it appears that the AUC remains stable and independent
 
 We further explored the impact of having a higher overlap between cases and controls by simulating distributions with mean values of 0.5 and 0.4, respectively. The AUC remains independent of the number of cases and controls, even though we observe higher variation in the results:
 
+![alt text](https://raw.githubusercontent.com/AlessioMilanese/evaluate_AUC/main/plots/figure_auc_2.png)
