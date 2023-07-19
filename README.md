@@ -16,3 +16,4 @@ Here we want to access weather the AUC ROC is dependent on the numer of positive
 
 To demonstrate this, I simulated the classification results for cases and controls, varying the number of cases and controls. I tested scenarios ranging from 10 cases out of 1000 samples to 990 cases out of 1000 samples. The AUC ROC values, representing the classifier's performance, are displayed below:
 
+![alt text](https://raw.githubusercontent.com/AlessioMilanese/evaluate_AUC/main/plots/figure_auc_1.png)
