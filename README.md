@@ -4,4 +4,6 @@ In a binary classification problem, we are tasked with classifying two distinct 
 
 In this example, we have 1000 samples, with half being controls and the other half being cases. Using a pre-trained classifier, we can predict the probability of each sample belonging to the "case" group. The results are presented in a histogram:
 
+![alt text](https://raw.githubusercontent.com/AlessioMilanese/evaluate_AUC/main/plots/figure1.png)
+
 Here we want to access weather the Area Under the Curve (AUC) for Receiver Operating Characteristic (ROC) curves is dependent on the numer of positive and negative cases, in the context of a binary classification problem. 
