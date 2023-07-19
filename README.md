@@ -19,3 +19,6 @@ To demonstrate this, I simulated the classification results for cases (normal di
 ![alt text](https://raw.githubusercontent.com/AlessioMilanese/evaluate_AUC/main/plots/figure_auc_1.png)
 
 Based on this simulation, it appears that the AUC remains stable and independent of the number of cases and controls. This suggests that the classifier's performance, as measured by the AUC, is consistent regardless of the proportion of cases and controls in the dataset.
+
+We further explored the impact of having a higher overlap between cases and controls by simulating distributions with mean values of 0.5 and 0.4, respectively. The AUC remains independent of the number of cases and controls, even though we observe higher variation in the results:
+
