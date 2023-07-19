@@ -6,8 +6,13 @@ In this example, we have 1000 samples, with half being controls and the other ha
 
 ![alt text](https://raw.githubusercontent.com/AlessioMilanese/evaluate_AUC/main/plots/figure1.png)
 
-There are different ways to evaluate the performance of the classifier. For example, we could evaluate precision (which represents the accuracy of positive predictions, basically how many errors we make in the classification) and recall (which represents the sensitivity, telling us if we recover all the positive examples). But note that they depend on defining a threshold. So in the example above, if I choose a threshold of 0.37, I will have a recall of 1, but lower precision. If I choose a threshold of 0.7, I will have a high precision (1) and lower recall (because I miss some cases):
+There are different ways to evaluate the performance of the classifier. For example, we could evaluate precision (which represents the accuracy of positive predictions, basically how many correct cases we identify) and recall (which represents the sensitivity, telling us how many of the cases we can identify). But note that they depend on defining a threshold. So in the example above, if I choose a threshold of 0.37, I will have a recall of 1, but lower precision. If I choose a threshold of 0.7, I will have the highest precision and lower recall (because I miss some cases):
 
 ![alt text](https://raw.githubusercontent.com/AlessioMilanese/evaluate_AUC/main/plots/figure2.png)
 
-Here we want to access weather the Area Under the Curve (AUC) for Receiver Operating Characteristic (ROC) curves is dependent on the numer of positive and negative cases, in the context of a binary classification problem. 
+A solution that allows us to compare classifiers independently of a fixed threshold is the AUC ROC (Area Under the Receiver Operating Characteristic curve). The AUC ROC provides a value between 0.5 and 1, where 0.5 represents a random classifier with no discrimination ability, and a higher value closer to 1 indicates better classifier performance in distinguishing between the two classes.
+
+Here we want to access weather the AUC ROC is dependent on the numer of positive and negative cases, in the context of a binary classification problem. 
+
+To demonstrate this, I simulated the classification results for cases and controls, varying the number of cases and controls. I tested scenarios ranging from 10 cases out of 1000 samples to 990 cases out of 1000 samples. The AUC ROC values, representing the classifier's performance, are displayed below:
+
