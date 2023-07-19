@@ -8,4 +8,6 @@ In this example, we have 1000 samples, with half being controls and the other ha
 
 There are different ways to evaluate the performance of the classifier. For example, we could evaluate precision (which represents the accuracy of positive predictions, basically how many errors we make in the classification) and recall (which represents the sensitivity, telling us if we recover all the positive examples). But note that they depend on defining a threshold. So in the example above, if I choose a threshold of 0.37, I will have a recall of 1, but lower precision. If I choose a threshold of 0.7, I will have a high precision (1) and lower recall (because I miss some cases):
 
+![alt text](https://raw.githubusercontent.com/AlessioMilanese/evaluate_AUC/main/plots/figure2.png)
+
 Here we want to access weather the Area Under the Curve (AUC) for Receiver Operating Characteristic (ROC) curves is dependent on the numer of positive and negative cases, in the context of a binary classification problem. 
